@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Amiri&display=swap");
+
+:root {
+  --font-size-title: 2.5rem;
+  --space: 32px;
+}
+
+@media (max-width: 440px) {
+  :root {
+    --font-size-title: 2.2rem;
+    --space: 22px;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Amiri", serif;
+}
+
+html {
+  background-image: url("/bg.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+body {
+  margin: 0;
+}
+
+article {
+  background-color: hsla(0, 0%, 0%, 0.8);
+  max-width: calc(100vw - var(--space) * 2);
+  width: 400px;
+  color: #fff;
+  padding: calc(var(--space) * 2);
+  aspect-ratio: 1 / 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+h1 {
+  font-size: var(--font-size-title);
+  margin: 0;
+}
+
+h2 {
+  margin: 0;
+}
+
+hgroup {
+  text-align: center;
+  padding: 0;
+  line-height: 1.2;
+}
+
+a,
+a:visited {
+  color: #fff;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
