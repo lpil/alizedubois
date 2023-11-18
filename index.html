@@ -33,7 +33,7 @@
     const l = window.location;
     const p = l.host + l.pathname;
     const q = new URLSearchParams({ p });
-    fetch(`https://hits.lpil.uk/count?${q.toString()}`);
+    if (!l.port) fetch(`https://hits.lpil.uk/count?${q.toString()}`);
   </script>
 </body>
 
